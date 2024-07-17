@@ -13,7 +13,6 @@ struct CartView: View {
       }
       .font(.system(size: 28))
       Button {
-//        Bus.send(K.clearCart, "")
         showAlert.toggle()
       } label: {
         Text("BUY")
