@@ -28,7 +28,7 @@ struct ShopAppApp: App {
 class AppDelegate: NSObject, UIApplicationDelegate {
   let cartService = CartService()
   let productsService = ProductsService()
-  let initialProducts = ["Apple", "Banana", "Orange"]
+  let initialProducts = ["Apple": 0, "Banana": 0, "Orange": 0]
   private var subscriptions = Set<AnyCancellable>()
   
   func application(
